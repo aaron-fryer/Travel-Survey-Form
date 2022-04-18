@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Holiday Survey Form</h1>
+            <p id="description" class="description text-center">Please help us learn your travel habits</p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" placeholder="Name" class="form-control" required />
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Email" required />
+            </div>
+            <div class="form-group">
+                <label for="number" id="number-label">Age</label>
+                <input type="number" id="number" class="form-control" name="age" min="10" max="99" placeholder="Age" />
+            </div>
+            <div class="form-group">
+                <label for="fav" id="label-fav">
+                    Where is your favourite holiday destination?</label>
+                <input type="text" id="fav" placeholder="Destination" class="form-control" />
+            </div>
+            <div class="form-group">
+                <p>Which option best describes you?</p>
+                <select name="role" id="dropdown" class="form-control" required>
+                    <option value="student">Student</option>
+                    <option value="professional">Professional</option>
+                    <option value="retired">Retired</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>How important is cost when choosing a holiday destination?</p>
+                <label>
+                    <input type="radio" class="input-radio" name="important" value="Extremely" checked>Extremely
+                    important</input>
+                </label>
+                <label>
+                    <input type="radio" class="input-radio" name="important" value="Very">Very
+                    important</input>
+                </label>
+                <label>
+                    <input type="radio" class="input-radio" name="important" value="Moderately">Moderately
+                    important</input>
+                </label>
+                <label>
+                    <input type="radio" class="input-radio" name="important" value="Slightly">Slightly
+                    important</input>
+                </label>
+                <label>
+                    <input type="radio" class="input-radio" name="important" value="Not">Not at all
+                    important</input>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>Continents travelled (Check all that apply)</p>
+                <label>
+                    <input type="checkbox" name="inp" value="NA" class="input-checkbox" />North America</label>
+                <label>
+                    <input type="checkbox" name="inp" value="EU" class="input-checkbox" />Europe</label>
+                <label>
+                    <input type="checkbox" name="inp" value="AF" class="input-checkbox" />Africa</label>
+                <label>
+                    <input type="checkbox" name="inp" value="SA" class="input-checkbox" />South America</label>
+                <label>
+                    <input type="checkbox" name="inp" value="AS" class="input-checkbox" />Asia</label>
+                <label>
+                    <input type="checkbox" name="inp" value="OA" class="input-checkbox" />Oceania</label>
+                <label>
+                    <input type="checkbox" name="inp" value="AT" class="input-checkbox" />Antartica</label>
+            </div>
+
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea name="comment" id="comments" placeholder="Enter your comment here" class="input-textarea">
+                </textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
